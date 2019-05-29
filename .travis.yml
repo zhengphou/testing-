@@ -1,5 +1,5 @@
-dist: xenial
-group: edge
+dist: trusty
+group: stable
 sudo: required
 before_install:
     - rvm install 2.6.3
