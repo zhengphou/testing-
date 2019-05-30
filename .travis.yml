@@ -1,4 +1,5 @@
-dist: trusty
+dist: bionic
+group: dev
 sudo: required
 before_install:
     - rvm install 2.6.3
@@ -7,7 +8,7 @@ script:
     #- cat /etc/apt/apt.conf.d/99-travis-apt-proxy
   - ls -al /etc/apt/apt.conf.d
   - lsb_release -a
-  - sudo apt-get update && sudo apt-get install build-essential
+  - sudo apt-get update && sudo apt-get -y install docker.io 
     #  - for i in {1..10}; do echo $i && curl --connect-timeout 5 -I https://www.google.com | grep "HTTP/2 200" && echo "connected!"; done
 addons:
   apt:
