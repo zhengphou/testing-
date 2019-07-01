@@ -1,18 +1,6 @@
-dist: bionic
-group: dev
-language: shell
-sudo: required
+os: osx
+osx_image: xcode11
 before_install:
-    - rvm install 2.6.3
-    - gem install bundler
-script:
-    #  - echo $TRAVIS_APT_PROXY
-    #- cat /etc/apt/apt.conf.d/99-travis-apt-proxy
-  - ls -al /etc/apt/apt.conf.d
-  - lsb_release -a
-addons:
-  apt:
-    sources:
-    - chef-stable-trusty
-    packages:
-    - chefdk
+  - brew update > /dev/null
+  - brew install gcc > /dev/null
+
