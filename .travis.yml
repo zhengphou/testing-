@@ -3,12 +3,12 @@ script:
 - df -h /
 - uname -a
 - xcodebuild -version
+- xcrun simctl list
+- xcodebuild -sdk -version
 - system_profiler SPHardwareDataType
 - swift -version
 - sw_vers
 matrix:
   include:
-  - os: osx
-    osx_image: xcode10.2
   - os: osx
     osx_image: xcode11
