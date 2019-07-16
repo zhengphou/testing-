@@ -3,3 +3,4 @@ language: java
 sudo: required
 before_install:
     - rvm install 2.6.3
+    - apt install ant -y 
