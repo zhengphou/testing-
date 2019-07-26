@@ -1,5 +1,5 @@
 language: android
-dist: xenial
+dist: bionic
 android:
   components:
     # Uncomment the lines below if you want to
