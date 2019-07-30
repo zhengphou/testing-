@@ -1,3 +1,4 @@
 language: android
-dist: bionic
+dist: trusty
+group: edge
 
