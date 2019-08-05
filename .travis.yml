@@ -1,3 +1,5 @@
-language: c
-dist: bionic
-
+sudo: false
+dist: xenial
+language: java
+before_install:
+  - ant setup
