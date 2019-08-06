@@ -1,6 +1,4 @@
-sudo: false
 dist: xenial
-group: stable
 language: java
 before_install:
   - ant setup
