@@ -1,2 +1,10 @@
 os: osx
 osx_image: xcode10.3
+script:
+ - df -h /
+ - uname -a
+ - xcodebuild -version
+ - system_profiler SPHardwareDataType
+ - swift -version
+ - sw_vers
+ - xcrun xcodebuild
