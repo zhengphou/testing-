@@ -1,4 +1,2 @@
-dist: xenial
-language: java
-before_install:
-  - ant setup
+os: osx
+osx_image: xcode10.3
