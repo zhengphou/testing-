@@ -8,3 +8,4 @@ script:
  - swift -version
  - sw_vers
  - xcrun xcodebuild
+ - xcrun simctl list
