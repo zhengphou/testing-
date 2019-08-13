@@ -9,3 +9,4 @@ script:
  - sw_vers
  - xcrun xcodebuild
  - xcrun simctl list
+ - xcodebuild -showsdks
