@@ -1,5 +1,11 @@
 sudo cp /etc/postgresql/{9.6,11}/main/pg_hba.confos: linux
 dist: bionic
+addons:
+ apt:
+  packages:
+   - postgresql-11
+   - postgresql-client-11
+ postgresql: 11
 before_install:
  - date 
  - sudo sed -i 's/port = 5433/port = 5432/' /etc/postgresql/11/main/postgresql.conf
