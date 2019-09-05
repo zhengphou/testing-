@@ -1,12 +1,9 @@
-os: osx
-osx_image: xcode10.3
-script:
- - df -h /
- - uname -a
- - xcodebuild -version
- - system_profiler SPHardwareDataType
- - swift -version
- - sw_vers
- - xcrun xcodebuild
- - xcrun simctl list
- - xcodebuild -showsdks
+sudo cp /etc/postgresql/{9.6,11}/main/pg_hba.confos: linux
+dist: bionic
+before_install:
+ - date 
+ - sudo sed -i 's/port = 5433/port = 5432/' /etc/postgresql/11/main/postgresql.conf
+ - sudo cp /etc/postgresql/{9.6,11}/main/pg_hba.conf
+ - sudo service postgresql stop
+ - sudo service postgresql start 11
+ - date
